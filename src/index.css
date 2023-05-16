@@ -1,0 +1,38 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --blanco: #dad7cd;
+  --verde-bajo: #a3b18a;
+  --verde-claro: #588157;
+  --verde: #3a5a40;
+  --verde-oscuro: #344e41;
+}
+
+body {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Maven Pro", sans-serif;
+}
+
+#root {
+  width: 100%;
+  /* background-color: var(--rosado); */
+}
+
+@media screen and (max-width: 60rem) { /* 960px */
+  :root {
+    font-size: 14px;
+  }
+}

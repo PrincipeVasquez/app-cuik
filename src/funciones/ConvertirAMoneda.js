@@ -1,0 +1,10 @@
+import React from "react";
+
+const FormatearCantidad = (cantidad) => {
+    return new Intl.NumberFormat(
+        'en-US',
+        {style: 'currency', currency: 'USD', minimumFractionDigits: 2}
+    ).format(cantidad);
+}
+
+export default FormatearCantidad;

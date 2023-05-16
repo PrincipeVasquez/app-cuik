@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* .contenedor-app {
+    background-color: #fff;;
+} */
+
+.contenedor-app__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-app h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    color: #073b4c;
+    font-family: "Poppins", sans-serif;
+}
+
+.contenedor-app__input {
+    padding: 2rem;
+    width: 70%;
+    border-radius: 3.5rem;
+    border: 1px solid #118ab2;
+    font-size: 4rem;
+    text-align: center;
+    color: #073b4c;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-app__input::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 100px;/* Centrado vertical */
+    color: #dad7cd;
+  }
+
+  .contenedor-imputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+/*********************** CREAR CUENTA ***********************/
+
+.contenedor-crear-cuenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.contenedor-crear-cuenta h1 {
+    color: #073b4c;
+    margin: 2rem 0;
+    font-size: 4.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.contenedor-crear-cuenta img {
+    margin: 8rem 0;
+}
+
+.contenedor-crear-cuenta p {
+    margin-top: 3.5rem;
+    font-size: 2rem;
+    color: #588157;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+/*********************** FOOTER ***********************/
+
+.footer {
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(52, 78, 65, .5);
+}
+
+/*********************** LISTA GASTOS ***********************/
+
+.contenedor-lista-gastos h1 {
+    font-size: 3.5rem;
+    color: #118ab2;
+    margin-top: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.contenedor-lista-gastos p {
+    font-size: 2rem;
+    color: rgba(7, 59, 76, .8);
+    font-family: "Poppins", sans-serif;
+}
+
+.contenedor-tarjeta {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.contenedor-tarjeta p {
+    position: absolute;
+    bottom: 30px;
+    color: #D6CCC2;
+    padding: 5.6rem 3.5rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.contenedor-tarjeta .contenedor-tarjeta__gasto {
+    position: absolute;
+    /* bottom: .5rem; */
+    padding: 1rem 3.5rem;
+    font-size: 3.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.contenedor-lista-gastos h2 {
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    color: #073b4c;
+    margin-top: 3.5rem;
+}
+
+.boton-icono-editar {
+    background: none;
+    border: none;
+}
+
+.contenedor-fecha-gasto {
+    background: #fff;
+    border-radius: 1.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.contenedor-fecha {
+    background: #06d6a0;
+    border-radius: 1.5rem 1.5rem 0 0;
+    color: #fff;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+/*********************** MENSAJE NO HAY GASTOS ***********************/
+
+.contenedor-mensaje-vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-mensaje-vacio p {
+    text-align: center;
+    color: rgba(7, 59, 76, .5);
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+/*********************** EDITAR GASTO ***********************/
+
+.formulario-editar-gasto h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    color: #073b4c;
+    font-family: "Poppins", sans-serif;
+}
+
+/*********************** GASTOS POR CATEGORÍA ***********************/
+
+.contenedor-gastos-categoria h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    color: #073b4c;
+    font-family: "Poppins", sans-serif;
+}
