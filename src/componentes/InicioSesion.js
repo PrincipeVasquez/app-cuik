@@ -81,7 +81,7 @@ const InicioSesion = () => {
                 <title>Iniciar Sesion</title>
             </Helmet>
             <form className="contenedor-crear-cuenta" onSubmit={handleSubmit}>
-                <img src="/img/cuik.png" width="200" alt="cuik" />
+                <img src="/img/cuik.png" width="100" alt="cuik" />
                 <h1>Login</h1>
                 <Inputs 
                     type="email"

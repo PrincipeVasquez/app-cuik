@@ -11,50 +11,50 @@ import {ReactComponent as IconoDiversion} from './../imagenes/ca-diversion.svg';
 
 const IconComida = styled(IconoComida) `
     fill: #118ab2;
-    width: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
-    height: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
+    width: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
+    height: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
 `;
 
 const IconCuentas = styled(IconoCuentas) `
     fill: #118ab2;
-    width: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
-    height: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
+    width: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
+    height: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
 `;
 
 const IconHogar = styled(IconoHogar) `
     fill: #118ab2;
-    width: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
-    height: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
+    width: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
+    height: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
 `;
 
 const IconTransporte = styled(IconoTransporte) `
     fill: #118ab2;
-    width: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
-    height: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
+    width: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
+    height: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
 `;
 
 const IconRopa = styled(IconoRopa) `
     fill: #118ab2;
-    width: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
-    height: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
+    width: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
+    height: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
 `;
 
 const IconSalud = styled(IconoSalud) `
     fill: #118ab2;
-    width: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
-    height: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
+    width: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
+    height: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
 `;
 
 const IconCompras = styled(IconoCompras) `
     fill: #118ab2;
-    width: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
-    height: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
+    width: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
+    height: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
 `;
 
 const IconDiversion = styled(IconoDiversion) `
     fill: #118ab2;
-    width: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
-    height: ${(props) => props.IconSize ? '4rem' : ''}; /* 250px */
+    width: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
+    height: ${(props) => props.IconSize ? '2.5rem' : ''}; /* 250px */
 `;
 
 const IconosCategoria = ({id, IconSize}) => {

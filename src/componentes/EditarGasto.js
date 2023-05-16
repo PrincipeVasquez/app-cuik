@@ -19,8 +19,8 @@ import editarGasto from "../firebase/editarGasto";
 const IconLeft = styled(IconoLeft) `
     fill: #073b4c;
     margin: 0 auto;
-    width: 80px;
-    height: 80px;
+    width: 3.5rem;
+    height: 3.5rem;
     // transition: all .3s ease-out;
 
     // &:hover {

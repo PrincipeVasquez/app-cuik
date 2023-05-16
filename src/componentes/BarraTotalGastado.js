@@ -10,7 +10,7 @@ const BarraTotal = styled.div`
     margin-top: 2rem;
 
     background: #118ab2;
-    border-radius: 1.5rem;
+    border-radius: .8rem;
     font-size: 1.25rem; /* 20px */
     letter-spacing: 1px;
     font-weight: 500;
@@ -20,6 +20,10 @@ const BarraTotal = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    & p {
+        font-size: .8rem;
+    }
  
     @media(max-width: 31.25rem) { /* 500px */
         flex-direction: column;
@@ -33,8 +37,8 @@ const BarraTotalGastado = () => {
 
     return(
         <BarraTotal>
-            <p>Total gastado en el mes:</p>
-            <p>{ConvertirAMoneda(total)}</p>
+            <p>Total gastado en el mes:{ConvertirAMoneda(total)}</p>
+            {/* <p>{ConvertirAMoneda(total)}</p> */}
         </BarraTotal>
     );
 }

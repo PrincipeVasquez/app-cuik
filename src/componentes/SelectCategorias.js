@@ -6,17 +6,18 @@ import IconosCategoria from "../elementos/IconosCategoria";
 const ContenedorSelect = styled.div`
     background: #fff;
     cursor: pointer;
-    border-radius: 1.5rem; /* 10px */
+    border-radius: .8rem; /* 10px */
     position: relative;
-    height: 5rem; /* 80px */
+    height: .8rem; /* 80px */
     width: 100%;
-    padding: 3.5rem 2.5rem;
-    font-size: 2.5rem; /* 24px */
+    // padding: 3.5rem 2.5rem;
+    padding: 1.8rem 1rem;
+    font-size: 1.3rem; /* 24px */
     text-align: center;
     display: flex;
     align-items: center;
     transition: .5s ease all;
-    margin: 0 0 1.2rem 0;
+    // margin: 0 0 1rem 0;
     border: 1px solid #118ab2;
     &:hover {
         background: #f1faee;
@@ -41,7 +42,7 @@ const Opciones = styled.div`
     background: #fff;
     position: absolute;
     // top: 5.62rem; /* 90px */
-    top: 8rem;
+    top: 4rem;
     left: 0;
     width: 100%;
     border-radius: 1.5rem;
@@ -51,7 +52,7 @@ const Opciones = styled.div`
 `;
  
 const Opcion = styled.div`
-    padding: 1.25rem; /* 20px */
+    padding: .8rem; /* 20px */
     display: flex;
     svg {
         width: 28px;

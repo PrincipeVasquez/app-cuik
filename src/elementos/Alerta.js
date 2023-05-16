@@ -52,7 +52,7 @@ const ContenedorAlerta = styled.div`
         border-radius: 0.31rem; /* 5px */
         box-shadow: 0px 0px 15px rgba(0,0,0,.1);
         text-align: center;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 `;
 

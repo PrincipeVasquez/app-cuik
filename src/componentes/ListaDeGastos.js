@@ -79,7 +79,7 @@ const ListaDeGastos = () => {
                     <p>Total de gastos</p>
                     <p className="contenedor-tarjeta__gasto">{convertirAMoneda(total)}</p>
                 </div>
-                <h2>Transacciones</h2>
+                <h2>Operaciones</h2>
 
                 <ContenedorLista>
                     {gastos.map((gasto, index) => {

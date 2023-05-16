@@ -30,6 +30,7 @@ const ContenedorInput = styled.div`
  
     .rdp {
         position: absolute;
+        margin: 0;
     }
  
     .rdp-months {

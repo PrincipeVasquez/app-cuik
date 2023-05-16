@@ -13,8 +13,8 @@ import { Alerta } from "../elementos/Alerta";
 const IconoEnviar = styled(IconoSend) `
     fill: #fff;
     margin-left: 1rem;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 `;
 
 const FormularioGasto = () => {

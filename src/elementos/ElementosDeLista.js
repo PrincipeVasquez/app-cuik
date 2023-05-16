@@ -36,7 +36,7 @@ const FuenteLista = styled.p `
 `;
 
 const FuenteListaCategorias = styled.p `
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     color: #073b4c;
@@ -66,9 +66,9 @@ const FuenteListaDescripcion = styled.p `
 
 const IconEditar = styled(IconoEditar) `
     fill: rgba(7, 59, 76, .5);
-    width: 3rem;
-    height: 3rem;
-    margin-right: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
     transition: all .3s ease-out;
     cursor: pointer;
 
@@ -79,8 +79,8 @@ const IconEditar = styled(IconoEditar) `
 
 const IconEliminar = styled(IconoEliminar) `
     fill: rgba(7, 59, 76, .5);
-    width: 3rem;
-    height: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
     transition: all .3s ease-out;
     cursor: pointer;
 
