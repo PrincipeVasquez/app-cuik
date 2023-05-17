@@ -30,9 +30,9 @@ import {useTotalDelMes} from './../Contextos/TotalGastadoEnElMesContext';
 
 const IconEtiqueta = styled(IconoEtiqueta) `
     fill: rgba(7, 59, 76, .5);
-    width: 8rem;
-    height: 8rem;
-    margin-top: 4rem;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1.5rem;
 `;
 
 const formatearFecha = (fecha) => {
