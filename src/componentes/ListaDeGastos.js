@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ContenedorBtnSalir from './../elementos/BtnSalir';
 import MenuNavegacion from "./MenuNavegacion";
 import { Helmet } from "react-helmet";
@@ -27,6 +27,7 @@ import {format, fromUnixTime} from 'date-fns';
 import {es} from 'date-fns/locale';
 import borrarGasto from "../firebase/borrarGasto";
 import {useTotalDelMes} from './../Contextos/TotalGastadoEnElMesContext';
+import useObtenerSaldo from "../hooks/useObtenerSaldo";
 
 const IconEtiqueta = styled(IconoEtiqueta) `
     fill: rgba(7, 59, 76, .5);
@@ -55,10 +56,17 @@ const fechaEsIgual = (gastos, index, gasto) => {
 
 const ListaDeGastos = () => {
     const {usuario} = UseAuth();
-    // console.log(usuario);
+    const [saldo] = useObtenerSaldo(usuario.uid);
 
     const [gastos, obtenerMasGastos, hayMasPorCargar] = useObtenerGastos();
-    // console.log(gastos);
+    const [ingreso, cambiarIngreso] = useState(0);
+
+    useEffect(() => {
+        let acumulado = saldo.reduce((acc, el) => acc + el.saldoIngreso, 0);
+        cambiarIngreso(acumulado);
+        // console.log(acumulado)
+    }, [saldo, usuario])
+    console.log(ingreso)
 
     const {total} = useTotalDelMes();
 
@@ -76,8 +84,8 @@ const ListaDeGastos = () => {
                 <p>Acá están tus gastos hasta ahora</p>
                 <div className="contenedor-tarjeta">
                     <img src="./img/tarjeta.png" />
-                    <p>Total de gastos</p>
-                    <p className="contenedor-tarjeta__gasto">{convertirAMoneda(total)}</p>
+                    <p>Tu saldo hasta ahora:</p>
+                    <p className="contenedor-tarjeta__gasto">{convertirAMoneda(ingreso - total)}</p>
                 </div>
                 <h2>Operaciones</h2>
 

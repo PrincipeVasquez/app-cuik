@@ -16,6 +16,7 @@ import favicon from './imagenes/logo.png';
 import { AuthProvider } from './Contextos/AuthContext';
 import RutaPrivada from './componentes/RutaPrivada';
 import { TotalGastadoProvider } from './Contextos/TotalGastadoEnElMesContext';
+import Saldo from './componentes/Saldo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -49,6 +50,13 @@ root.render(
               <Route path="/editar/:id" element={
                 <RutaPrivada>
                   <EditarGasto />
+                </RutaPrivada>
+              }
+              />
+
+              <Route path="/saldo" element={
+                <RutaPrivada>
+                  <Saldo />
                 </RutaPrivada>
               }
               />

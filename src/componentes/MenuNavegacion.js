@@ -10,6 +10,7 @@ const MenuNavegacion = () => {
                 <NavLink to='/'>Ingresar</NavLink>
                 <NavLink to='/lista'>Gastos</NavLink>
                 <NavLink to='/categorias'>Categorias</NavLink>
+                <NavLink to='/saldo'>Saldo</NavLink>
             </Navegacion>
         </ContenedorMenu>
     );
@@ -26,11 +27,11 @@ const Navegacion = styled.nav `
     justify-content: space-evenly;
 
     && a {
-        font-size: 1rem;
+        font-size: .8rem;
         text-decoration: none;
         color: #073b4c;
         font-weight: 700;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         font-family: "Poppins", sans-serif;
     }
 
