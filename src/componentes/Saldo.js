@@ -12,7 +12,7 @@ import { UseAuth } from "../Contextos/AuthContext";
 import { Alerta } from "../elementos/Alerta";
 import useObtenerSaldo from "../hooks/useObtenerSaldo";
 import GraficoDeFinanzas from './GraficoDeFinanzas';
-import GraficoChartJS from './GraficoChartJS';
+import {ReactComponent as IconoChart} from './../imagenes/chart.svg';
 
 const IconoEnviar = styled(IconoSend) `
     fill: #06d6a0;
@@ -20,6 +20,13 @@ const IconoEnviar = styled(IconoSend) `
     width: 25px;
     height: 25px;
     cursor: pointer;
+`;
+
+const IconChart = styled(IconoChart) `
+    fill: rgba(7, 59, 76, .5);
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1.5rem;
 `;
 
 const Saldo = () => {
@@ -30,7 +37,7 @@ const Saldo = () => {
     const [ingreso, cambiarIngreso] = useState(0);
     const [estadoAlerta, cambiarEstadoAlerta] = useState(false);
     const [alerta, cambiarAlerta] = useState({});
-    const [mostrarAgregar, cambiarMostrarAgregar] = useState(true);
+    const [ocultarGrafica, cambiarOcultarGrafica] = useState(true);
 
     const [saldo] = useObtenerSaldo(usuario.uid);
     // console.log(ingreso);
@@ -74,7 +81,7 @@ const Saldo = () => {
                 )
                 .then(() => {
                     cambiarInputSaldo('');
-                    cambiarMostrarAgregar(false)
+                    // cambiarMostrarAgregar(false)
                 })
                 .catch((error) => {
                     cambiarEstadoAlerta(true);
@@ -144,11 +151,16 @@ const Saldo = () => {
                     cambiarEstadoAlerta={cambiarEstadoAlerta}
                 />
             </form>
-            {/* <div className="circulo-torta"></div> */}
-            <div className="grafico-torta">
-                <GraficoDeFinanzas />
-                {/* <GraficoChartJS /> */}
-            </div>
+            {saldo.length !== 0 ?
+                <div className="grafico-torta">
+                    <GraficoDeFinanzas />
+                </div>
+            :
+                <div className="contenedor-grafico-vacio">
+                    <IconChart />
+                    <p>Ingrese saldo que tendra en el mes.</p>
+                </div>
+            }
 
             <div className="contenedor-saldo-disponible">
                 <p>Saldo disponible</p>

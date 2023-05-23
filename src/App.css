@@ -268,10 +268,20 @@ form {
 
 /*********************** GRAFICO TORTA ***********************/
 
-.grafico-torta {
+.contenedor-grafico-vacio {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 3rem 2rem;
+}
+
+.contenedor-grafico-vacio p {
+    text-align: center;
+    color: rgba(7, 59, 76, .5);
+}
+
+.grafico-torta {
     width: 79%;
     margin: 0 auto;
 }
